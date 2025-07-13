@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Malla Interactiva</title>
+  <!-- DataTables CSS y JS (para interactividad) -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+</head>
+<body>
+  <h1>Proyectos</h1>
+  <table id="malla" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Enlace</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Proyecto A</td>
+        <td><a href="#">Ver código</a></td>
+        <td>✅ Completado</td>
+      </tr>
+      <tr>
+        <td>Proyecto B</td>
+        <td><a href="#">Ver código</a></td>
+        <td>🔄 En progreso</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    $(document).ready(function() {
+      $('#malla').DataTable(); // Hace la tabla interactiva
+    });
+  </script>
+</body>
+</html>
